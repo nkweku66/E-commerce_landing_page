@@ -1,19 +1,23 @@
+import Container from '../components/styled-componets/Container.ts'
+
 const About = () => {
     let src = "./src/assets/images/";
 
     return (
-        <div className="about--sec">
+        <Container>
             <img src={`${src}image-about-dark.jpg`} alt="About us" />
-            <h1>About our Furniture</h1>
-            <p>Our multifunctional collection blends design and function 
-                to suit your individual taste. Make each room unique, or pick 
-                a cohesive theme that best express your interests and what inspires you.
-                Find the furniture pieces you need, from traditional to contemporary
-                styles or anything in between. Product specialists are available to help
-                 you create your dream space.
-            </p>
+            <section className="about--content">
+                <h3>About our Furniture</h3>
+                <p>Our multifunctional collection blends design and function
+                    to suit your individual taste. Make each room unique, or pick
+                    a cohesive theme that best express your interests and what inspires you.
+                    Find the furniture pieces you need, from traditional to contemporary
+                    styles or anything in between. Product specialists are available to help
+                     you create your dream space.
+                </p>
+            </section>
             <img src={`${src}image-about-light.jpg`} alt="About us" />
-        </div>
+        </Container>
     )
 }
 
