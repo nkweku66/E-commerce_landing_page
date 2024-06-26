@@ -10,8 +10,8 @@ interface Props {
     mobileImage?: string;
     heading: string;
     description: string;
-    handleClick?: (event: MouseEventHandler) => void;
-    switchBack?: (event: MouseEventHandler) => void;
+    handleClick?: MouseEventHandler<SVGSVGElement>;
+    switchBack?:  MouseEventHandler<SVGSVGElement>;
     isTransitioning: boolean;
 
 
