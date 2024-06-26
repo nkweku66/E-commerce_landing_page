@@ -22,7 +22,7 @@ useEffect(() => {
 }, [isTransitioning]);
 
 useEffect(() => {
-  const handleKeyDown = (event) => {
+  const handleKeyDown = (event: { key: string }) => {
     if (event.key === 'ArrowRight') {
       changeImage();
     } else if (event.key === 'ArrowLeft') {
@@ -38,7 +38,7 @@ useEffect(() => {
 }, [index]);
 
 useEffect(() => {
-  const handleKeyDown = (event) => {
+  const handleKeyDown = (event: { key: string }) => {
     if (event.key === 'ArrowRight') {
       changeImage();
     } else if (event.key === 'ArrowLeft') {
@@ -46,7 +46,7 @@ useEffect(() => {
     }
   };
 
-  const handleSwipe = (event) => {
+  const handleSwipe = (event: TouchEvent) => {
     const touchStartX = event.touches[0].clientX;
     const touchEndX = event.changedTouches[0].clientX;
 
