@@ -11,10 +11,6 @@ const GlobalStyle = createGlobalStyle`
         font-size: 1em;
     }
 
-    a {
-        font-size: 1.2em;
-    }
-
     nav {
         width: 100%;
         height: 5em;

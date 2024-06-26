@@ -173,11 +173,6 @@ const Nav = styled.div`
       left: -100px;
       transition: ease-out 0.5s;
     }
-
-    @media  (min-width: 414px) {
-      top: 350px;
-      left: 74.5vw;
-    }
 `
 
 // desktop next
