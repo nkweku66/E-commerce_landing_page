@@ -23,6 +23,6 @@ dist-ssr
 *.sln
 *.sw?
 
-Navbar.tsx
-NavbarStyles.ts
-navtemp
+src/components/Navbar/Navbar.tsx
+src/components/Navbar/NavbarStyles.ts
+src/components/Navbar/navtemp
