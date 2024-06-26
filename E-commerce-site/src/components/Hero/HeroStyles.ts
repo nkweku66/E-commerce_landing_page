@@ -1,4 +1,4 @@
-import styled, {css, createGlobalStyle} from 'styled-components'
+import styled, {createGlobalStyle} from 'styled-components'
 
 
 
@@ -31,7 +31,7 @@ const Div = styled.div`
   }
 `
 
-  const buttonStyles = css<Props>`
+  const buttonStyles = styled.button<Props>`
     background-color: ${(props) => (props.variant === 'default' ? '#000' : 'transparent')};
     border: none;
     cursor: pointer;
@@ -50,7 +50,7 @@ const Div = styled.div`
     @media (1366px <= width <= 1440px) {
       margin-top: 0;
 
-      &:hover {
+      :hover {
         background-color: ${(props) => (props.variant === 'default' ? '#444444' : 'none')};
         color: #444444; 
       }
