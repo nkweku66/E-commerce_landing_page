@@ -1,0 +1,107 @@
+/* interface Props {
+    variant?: 'transparent' | 'default';
+    mobile?: boolean;
+    handleClick?: SubmitEvent;
+    hidden? : boolean;
+  }
+
+export const Nav = css<Props>`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 30px 63px;
+    font-family: "league Spartan", sans-serif;
+
+    & > svg:first-child {
+        display: ${(props) => (props.hidden) ? 'block' : 'none'};
+        padding: 0;
+        margin-left: -26px;
+        margin-right: 100px;
+    }
+
+    & > svg:third-child {
+        display: ${(props) => (props.hidden) ? 'none' : 'block'};
+        padding: 0;
+        margin-left: -26px;
+        margin-right: 100px;
+    }
+
+    & > svg {
+        margin: 0 auto;
+        cursor: pointer;
+        // margin-left: 100px;
+    }
+`
+
+export const List = css<Props>`
+    display: ${(props) => (props.hidden) ? 'none' : 'flex'};
+    background-color: ${(props) => (props.hidden) ? 'transparent' : 'transparent'};
+    // width: 375px;
+    // height: 110px;
+
+    & > Navlink {
+        color: #0000;
+    }
+
+    & > a {
+        color: #0000;
+        font-size: 12px;
+        margin-right: 10px;
+    }
+
+    & > svg {
+        margin: 47px 47px 0 0;
+        margin-right: auto;
+        cursor: pointer;
+        padding-left: 26px;
+    }
+
+    & > Navlink:hover {
+        color: none;
+    }
+`
+
+export const MobileNav = css`
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    padding: 30px 63px;
+    font-family: "league Spartan", sans-serif;
+
+`
+
+
+export const NavLink = css`
+margin: 0 20px;
+display: flex;
+// background-color: #FFFFFF;
+align-items: center;
+cursor: pointer;
+position: relative;
+
+& > a {
+    text-decoration: none;
+}
+
+& > a:after {
+    content: '';
+    position: absolute;
+    background-color: #fefeff;
+    border-radius: 5px;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+}
+
+& > a:hover {
+    color: #A0A0A0;
+}
+
+& > a:hover:after {
+    width: 100%;
+    transition: 0.3s ease-in-out;
+}
+` */

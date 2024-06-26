@@ -1,4 +1,6 @@
-import Container from '../components/styled-componets/Container.ts'
+// import styled from 'styled-components';
+import {Container, Section} from './Aboutstyles.ts'
+
 
 const About = () => {
     let src = "./src/assets/images/";
@@ -6,7 +8,7 @@ const About = () => {
     return (
         <Container>
             <img src={`${src}image-about-dark.jpg`} alt="About us" />
-            <section className="about--content">
+            <Section className="about--content">
                 <h3>About our Furniture</h3>
                 <p>Our multifunctional collection blends design and function
                     to suit your individual taste. Make each room unique, or pick
@@ -15,7 +17,7 @@ const About = () => {
                     styles or anything in between. Product specialists are available to help
                      you create your dream space.
                 </p>
-            </section>
+            </Section>
             <img src={`${src}image-about-light.jpg`} alt="About us" />
         </Container>
     )
