@@ -3,7 +3,7 @@ import {Container, Section} from './Aboutstyles.ts'
 
 
 const About = () => {
-    let src = "./src/assets/images/";
+    let src = "./images/";
 
     return (
         <Container>
